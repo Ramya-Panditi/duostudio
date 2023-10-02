@@ -1,0 +1,255 @@
+*{
+   margin:0;
+   padding: 0;
+   box-sizing: border-box;
+   font-family: PP mori;
+   color: white;
+ 
+}
+html,body{
+    width: 100%;
+    height: 100%;
+}
+.cursor{
+    height: 20px;
+    width: 20px;
+    position: fixed;
+    z-index:5;
+    border-radius: 50%;
+    background-color: #EDBFFF;
+    mix-blend-mode: difference;
+    transition: background-image ease 0.5s;
+    background-position: center;
+    background-size: cover;
+    /* wow  */
+}
+.main{
+    background-color: #0F0D0D;
+    cursor: none;
+}
+.page1{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 6;
+    padding-top: 15vh;
+}
+#nav{
+    height: 55px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding:0px 30px;
+    position: fixed;
+    mix-blend-mode: difference;
+    z-index: 99;
+    
+}
+#nav img{
+    height: 26px;
+    
+    
+}
+.navpart2{
+    display: flex;
+    justify-content: center;
+    gap:23px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    
+}
+#nav .circle{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: white;
+    
+}
+#nav h4:nth-child(1){
+    border-bottom: 1.5px solid white;
+}
+.tab-switch{
+    height: 100vh;
+    width: 100%;
+    background-color: #EDBFFF;
+    position: fixed;
+    top:0;
+    z-index: 98;
+    opacity: 0;
+    display: none;
+    transition: opacity ease-in-out 1s;
+}
+.page1 h1{
+    font-size: 8vw;
+    font-weight: 300;
+    font-family: PP mori;
+   
+    margin-left:5vw;
+
+}
+.page1 h2{
+    font-size: 8vw;
+    font-weight: 300;
+    font-family: PP mori;
+    margin-left:25vw;
+
+}
+.page1 video{
+    margin: 20vh auto;
+    display: block;
+}
+.page2{
+    min-height:95vh;
+    width: 100%;
+    padding: 0 5vw;
+    border-bottom: 3px solid black;
+    position: relative;
+    z-index: 6;
+}
+
+
+.page2 h1{
+    font-weight: 300;
+    margin:10px;
+    font-size:6vw;
+    color: black;
+    
+}
+.page2-container{
+    display: flex;
+    /* background-color: rgb(216, 201, 28); */
+    height: 60vh;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    gap:30vw;
+}
+.page2-left{
+    width: 30%;
+}
+.page2-left h2{
+    font-size: 3.4vw;
+    font-weight: 300;
+    color: black;
+}
+.page2-right {
+    width:30%;
+}
+.page2-right p{
+    font-size: 4vh;
+    color: black;
+}
+.page2-right button{
+    color: black;
+    background-color: #EDBFFF;
+    border:none;
+    width: 100%;
+    border-radius: 50px;
+    margin:1vh 0;
+    padding: 1.5vh 0vw;
+}
+.page3{
+    
+    width:100%;
+    min-height: 130vh;
+    position: relative;
+    z-index: 6;
+    
+}
+.page3 h1{
+    padding: 3.5vh 4vw;
+    color: black;
+    font-size: 6vw;
+    font-weight: 400;
+}
+.page3-part1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+}
+.page3-part1 img{
+    width:45%;
+   margin-top: 15vh;
+}
+.page3-part1 video{
+    width:45%;
+}
+.page4{
+    min-height: 100vh;
+    width: 100%;
+    position: relative;
+    z-index: 6;
+    padding: 10vh 6vw;
+}
+.elem img{
+    position: absolute;
+    opacity:0;
+    transition: all ease-out 0.5s;
+    transform: translateY(10%) rotate(3deg);
+}
+.elem img:nth-child(1){
+    left: 0%;
+}
+.elem img:nth-child(3){
+    right:2%;
+}
+.elem{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.elem h1{
+    margin-left: 65px;
+    font-size: 7vw;
+    transition: all ease-out 0.5s;
+}
+.elem:hover h1{
+    transform: translateY(-100%);
+    color: #EDBFFF;
+}
+.elem:hover img{
+    opacity: 1;
+    transform: translateY(0%) rotate(0deg);
+}
+.text-div{
+    height: 100px;
+    overflow: hidden;
+}
+
+
+
+
+
+.page5{
+    min-height: 120vh;
+    width: 100%;
+    position: relative;
+    z-index: 6;
+    padding: 1vh 7vw;
+}
+.box{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-top:2px solid white;
+    padding: 6vh 1vw;
+}
+.box:nth-child(6){
+    border-bottom:2px solid white;
+
+}
+.page5 h2{
+    font-size: 5vw;
+    font-weight: 300;
+    margin: 5vh 0vw;
+    text-transform: uppercase;
+}
+
+
+
+footer{
+    height: 60vh;
+    width: 100%;
+    background-color: #EDBFFF;
+}
